@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: SF Pro Text;
+    font-family: "SF Pro Text";
 }
 @font-face {
     font-family: SF Pro Text;
@@ -30,7 +30,7 @@
 .content{
     display: flex;
     flex-direction: column;
-    padding-top: 48px;
+    padding: 48px 0;
 }
 .greeting{
     width: 359.947px;
@@ -616,25 +616,25 @@
     width: 48px;
     height: 48px;
     border-radius: 48px;
-    background: url(../img/Event/avt1.png) lightgray 50% / cover no-repeat;    
+    background: url(../img/Event/avt1.png) lightgray 50% / cover no-repeat;
 }
 .event-item:nth-child(2) .avt-event-item{
     width: 48px;
     height: 48px;
     border-radius: 48px;
-    background: url(../img/Event/avt2.png) lightgray 50% / cover no-repeat;    
+    background: url(../img/Event/avt2.png) lightgray 50% / cover no-repeat;
 }
 .event-item:nth-child(3) .avt-event-item{
     width: 48px;
     height: 48px;
     border-radius: 48px;
-    background: url(../img/Event/avt3.png) lightgray 50% / cover no-repeat;    
+    background: url(../img/Event/avt3.png) lightgray 50% / cover no-repeat;
 }
 .event-item:nth-child(4) .avt-event-item{
     width: 48px;
     height: 48px;
     border-radius: 48px;
-    background: url(../img/Event/avt4.png) lightgray 50% / cover no-repeat;    
+    background: url(../img/Event/avt4.png) lightgray 50% / cover no-repeat;
 }
 .infor-event-item{
     display: flex;
@@ -647,7 +647,7 @@
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
-    line-height: 24px; 
+    line-height: 24px;
 }
 .event-item--des{
     color: #999;
@@ -715,4 +715,3 @@
     75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
     100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
 }
-  
