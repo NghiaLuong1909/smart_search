@@ -1,0 +1,432 @@
+.project-equal-input-value{
+    width: 767px;
+    /* height: 676px; */
+    /* min-height: max-content; */
+    padding-bottom: 24px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid #DFE2E8;
+    background: #FFF;
+    box-shadow: 0px 6px 32px 0px rgba(0, 0, 0, 0.06);
+}
+.project-equal-input-value--intro{
+    width: 767px;
+    display: flex;
+    justify-content: space-between;
+    padding: 31px 34px 0 24px;
+}
+.project-equal-input-value--title{
+    color: #000;
+    font-family: "SF Pro Text";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+}
+.project-equal-input-value--des{
+    color: #343CED;
+    font-family: "SF Pro Text Thin";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    margin-top: 7px;
+}
+.project-equal-input-value--button{
+    text-decoration: none;
+    color: #656565;
+    font-family: "SF Pro Text";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    display: inline-flex;
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--Line-linePrimary, #DADDE1);
+    background: var(--Background-bgSecondary, #F5F7F9);
+}
+.chart{
+    width: 511px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.chart--infor{
+    display: flex;
+    width: 304px;
+    align-items: flex-start;
+    gap: 8px;
+}
+.infor--complete,
+.infor--unfinished{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    flex: 1 0 0;
+}
+.quantity-complete,
+.quantity-unfinished{
+    color: var(--Content-contentTertiary, #9A9EA5);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "SF Pro Text";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+.on-time,
+.out-of-date,
+.not-yet-expired,
+.expired{
+    display: flex;
+    padding: 4px 4px 4px 0px;
+    align-items: center;
+    gap: 4px;
+    align-self: stretch;
+    border-radius: 4px;
+    background: var(--Background-bgPrimary, #FFF);
+}
+.on-time--content,
+.out-of-date--content,
+.not-yet-expired--content,
+.expired--content{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    flex: 1 0 0;
+    overflow: hidden;
+    color: var(--Content-contentPrimary, #18202A);
+    font-feature-settings: 'clig' off, 'liga' off;
+    text-overflow: ellipsis;
+    font-family: "SF Pro Text";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+.on-time--status{
+    width: 8px;
+    height: 8px;
+    flex-shrink: 0;
+    background-color: rgb(44, 175, 254);
+    border-radius: 4px;
+}
+.out-of-date--status{
+    width: 8px;
+    height: 8px;
+    flex-shrink: 0;
+    background-color: rgb(84, 79, 197);
+    border-radius: 4px;
+}
+.not-yet-expired--status{
+    width: 8px;
+    height: 8px;
+    flex-shrink: 0;
+    background-color: rgb(0, 226, 114);
+    border-radius: 4px;
+}
+.expired--status{
+    width: 8px;
+    height: 8px;
+    flex-shrink: 0;
+    background-color: rgb(254, 106, 53);
+    border-radius: 4px;
+}
+.project--detail{
+    display: flex;
+    flex-direction: column;
+}
+.pm-document{
+    max-width: 710px;
+    display: flex;
+    align-items: center;
+    padding: 0 0 24px 24px;
+}
+.project-manage,
+.document-project{
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+.avt-pm{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background: url(../img/Pm-document/avtPM.png) lightgray 50% / cover no-repeat;
+}
+.project-manage--name,
+.document-project--name{
+    color: #000;
+    font-family: "SF Pro Text";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.project-manage--des,
+.document-project--des{
+    color: #A2A2A2;
+    font-family: "SF Pro Text Thin";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+.avt-doc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    background-color: #F5F7F9;
+}
+.border-between-pm-prj{
+    width: 1px;
+    height: 40px;
+    flex-shrink: 0;
+    background: #ECECEC;
+    margin: 0 24px;
+}
+.border-bottom-pm-document{
+    width: 710px;
+    height: 1px;
+    flex-shrink: 0;
+    opacity: 0.5;
+    background: #D9D9D9;
+    margin: auto;
+}
+.daily-meeting{
+    padding: 16px 33px 16px 24px;
+    display: flex;
+    flex-direction: column;
+}
+.daily-meeting--detail{
+    display: flex;
+    justify-content: space-between;
+}
+.daily-meeting--intro{
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+.border-left-daily-meeting--intro{
+    width: 3px;
+    height: 34px;
+    background: #FF7A7A;
+}
+.daily-meeting--title{
+    color: #000;
+    font-family: "SF Pro Text";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.daily-meeting--des{
+    color: #A2A2A2;
+    font-family: "SF Pro Text";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+.daily-meeting-user{
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+.daily-meeting-avt-user{
+    position: relative;
+    display: flex;
+}
+.avt-user:nth-child(1){
+    position: absolute;
+    right: 60px;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 32px;
+    border: 1px solid #FFF;
+    background: url(../img/project-detail/avt1.png) lightgray 50% / cover no-repeat;
+    border: 1px solid #fff;
+}
+.avt-user:nth-child(2){
+    position: absolute;
+    right: 32px;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 32px;
+    border: 1px solid #FFF;
+    background: url(../img/project-detail/avt2.png) lightgray 50% / cover no-repeat;
+    border: 1px solid #fff;
+}
+.avt-user:nth-child(3){
+    position: absolute;
+    right: 4px;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 32px;
+    border: 1px solid #FFF;
+    background: url(../img/project-detail/avt3.png) lightgray 50% / cover no-repeat;
+    border: 1px solid #fff;
+}
+.remaining-quantity{
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    color: #FFF;
+    font-family: "SF Pro Text";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.daily-meeting-icon{
+    display: flex;
+    padding: 4px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--Line-linePrimary, #DADDE1);
+    background: var(--Background-bgSecondary, #F5F7F9);
+}
+.daily-meeting--content{
+    color: #646464;
+    font-family: "SF Pro Text Thin";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 9px 0;
+}
+.daily-meeting--note{
+    max-width: max-content;
+    padding: 4px 12px;
+    border-radius: 100px;
+    background: var(--Background-bgSecondary, #F5F7F9);
+    color: #A2A2A2;
+    font-family: "SF Pro Text Thin";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+}
+.border-bottom-daily-meeting{
+    width: 710px;
+    height: 1px;
+    flex-shrink: 0;
+    opacity: 0.5;
+    background: #D9D9D9;
+    margin: auto;
+}
+.infor-project{
+    display: flex;
+    flex-direction: column;
+    padding: 24px 33px 0 24px;
+}
+.project-intro{
+    display: flex;
+    justify-content: space-between;
+}
+.project-intro-content{
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+.project-intro--title{
+    color: #000;
+    font-family: "SF Pro Text Thin";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+}
+.project-intro--des{
+    color: #A2A2A2;
+    font-family: "SF Pro Text Thin";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+}
+.project-intro-user{
+    position: relative;
+    display: flex;
+}
+.avt-project-intro-user:nth-child(1){
+    position: absolute;
+    right: 60px;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 32px;
+    border: 1px solid #FFF;
+    background: url(../img/project-infor/avt1.png) lightgray 50% / cover no-repeat;
+    border: 1px solid #fff;
+}
+.avt-project-intro-user:nth-child(2){
+    position: absolute;
+    right: 32px;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 32px;
+    border: 1px solid #FFF;
+    background: url(../img/project-infor/avt2.png) lightgray 50% / cover no-repeat;
+    border: 1px solid #fff;
+}
+.avt-project-intro-user:nth-child(3){
+    position: absolute;
+    right: 4px;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 32px;
+    border: 1px solid #FFF;
+    background: url(../img/project-infor/avt3.png) lightgray 50% / cover no-repeat;
+    border: 1px solid #fff;
+}
+.project-intro-user-remaining-quantity{
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    color: #FFF;
+    font-family: "SF Pro Text";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.infor-project-btn{
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding-top: 16px;
+}
+.infor-project-btn-item{
+    max-width: max-content;
+    text-decoration: none;
+    display: flex;
+    padding: 4px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 100px;
+    background: var(--Background-bgSecondary, #F5F7F9);
+    color: #A2A2A2;
+    font-family: "SF Pro Text Thin";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+}

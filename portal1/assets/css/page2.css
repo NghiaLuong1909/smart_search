@@ -1,0 +1,295 @@
+.job-detail{
+    width: 767px;
+    min-height: max-content;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid #DFE2E8;
+    background: #FFF;
+    box-shadow: 0px 6px 32px 0px rgba(0, 0, 0, 0.06);
+}
+.current-time{
+    color: #000;
+    font-family: "SF Pro Text";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 31px 0 7px 24px;
+}
+.total-job{
+    color: #343CED;
+    font-family: "SF Pro Text";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 0 0 26px 24px;
+}
+.type-job{
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 0 0 0 24px;
+}
+.type-job-btn{
+    text-decoration: none;
+    display: flex;
+    padding: 4px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--Line-linePrimary, #DADDE1);
+    background: var(--Background-bgSecondary, #F5F7F9);
+    color: #A2A2A2;
+    font-family: "SF Pro Text";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+.type-job-btn:nth-child(1){
+    text-decoration: none;
+    display: flex;
+    padding: 4px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--Line-linePrimary, #DADDE1);
+    background: var(--Background-bgSecondary, #F5F7F9);
+    color: #656565;
+    font-family: "SF Pro Text";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+.list-job{
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 24px 0;
+}
+.job-item{
+    margin: 0 32px 0 24px;
+    padding: 16px 0;
+}
+.job-item:nth-child(1){
+    border-bottom: 1px solid #DADDE1;
+}
+.job-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.avt-detail-job{
+    display: flex;
+    width: 211.18px;
+    align-items: center;
+    gap: 12px;
+}
+.border-left-job-title{
+    width: 3px;
+    height: 34px;
+    flex-shrink: 0;
+    background: #FF7A7A;
+}
+.avt-job{
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.icon-1 {
+    background-color: #88CACE;
+}
+.icon-2 {
+    background-color: #DBAD93;
+}
+.name-job{
+    color: #000;
+    font-family: "SF Pro Text";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    min-width: max-content;
+}
+.des-job{
+    color: #A2A2A2;
+    font-family: "SF Pro Text";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    min-width: max-content;
+}
+.job-title-user{
+    position: relative;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+.job-item:nth-child(1) .job-title-user .avt-user:nth-child(1){
+    position: absolute;
+    right: 112px;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 32px;
+    border: 1px solid #FFF;
+    background: url(../img/meeting/avt1.png) lightgray 50% / cover no-repeat;
+}
+.job-item:nth-child(1) .job-title-user .avt-user:nth-child(2){
+    position: absolute;
+    right: 86px;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 32px;
+    border: 1px solid #FFF;
+    background: url(../img/meeting/avt2.png) lightgray 50% / cover no-repeat;
+}
+.job-item:nth-child(1) .job-title-user .avt-user:nth-child(3){
+    position: absolute;
+    right: 60px;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 32px;
+    border: 1px solid #FFF;
+    background: url(../img/meeting/avt3.png) lightgray 50% / cover no-repeat;
+}
+.job-item:nth-child(1) .job-title-user .remaining-quantity{
+    position: absolute;
+    top: 6px;
+    right: 68px;
+    color: #fff;
+    font-family: "SF Pro Text";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.job-item:nth-child(2) .job-title-user .avt-user:nth-child(1){
+    position: absolute;
+    top: -12px;
+    right: 60px;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 32px;
+    border: 1px solid #FFF;
+    background: url(../img/concept/avt1.png) lightgray 50% / cover no-repeat;
+}
+.job-item:nth-child(2) .job-title-user .avt-user:nth-child(2){
+    position: absolute;
+    top: -12px;
+    right: 34px;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 32px;
+    border: 1px solid #FFF;
+    background: url(../img/concept/avt2.png) lightgray 50% / cover no-repeat;
+}
+.job-item:nth-child(2) .job-title-user .avt-user:nth-child(3){
+    position: absolute;
+    top: -12px;
+    right: 8px;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 32px;
+    border: 1px solid #FFF;
+    background: url(../img/concept/avt3.png) lightgray 50% / cover no-repeat;
+}
+.job-item:nth-child(2) .job-title-user .remaining-quantity{
+    position: absolute;
+    top: -6px;
+    right: 14px;
+    color: #fff;
+    font-family: "SF Pro Text";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.job-item:nth-child(4) .job-title-user .avt-user{
+    position: absolute;
+    top: -18px;
+    right: 34px;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 32px;
+    border: 1px solid #FFF;
+    background: url(../img/project/avt1.png) lightgray 50% / cover no-repeat;
+}
+/* .border-bottom-job-item{
+    width: 709px;
+    height: 1px;
+    flex-shrink: 0;
+    fill: #DADDE1;
+    opacity: 0.5;
+} */
+.job-title-icon{
+    display: flex;
+    padding: 4px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--Line-linePrimary, #DADDE1);
+    background: var(--Background-bgSecondary, #F5F7F9);
+}
+.content-job{
+    color: #646464;
+    font-family: "SF Pro Text";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 9px 0;
+}
+.list-note{
+    display: flex;
+    width: 317.411px;
+    align-items: flex-start;
+    gap: 8px;
+}
+.note-content{
+    display: flex;
+    padding: 4px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 100px;
+    background: var(--Background-bgSecondary, #F5F7F9);
+    color: #A2A2A2;
+    font-family: "SF Pro Text";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+.break-time{
+    display: flex;
+    width: 765px;
+    padding: 10px 575px 8px 23px;
+    align-items: center;
+    background: #F6F8FD;
+}
+.time{
+    color: #A2A2A2;
+    font-family: "SF Pro Text";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    min-width: max-content;
+}

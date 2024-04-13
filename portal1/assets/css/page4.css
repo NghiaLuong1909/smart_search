@@ -1,0 +1,100 @@
+.file-equal-input-value{
+    width: 767px;
+    min-height: max-content;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid #DFE2E8;
+    background: #FFF;
+    box-shadow: 0px 6px 32px 0px rgba(0, 0, 0, 0.06);
+}
+.file-item{
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0 16px 24px;
+}
+.file-detail{
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding-bottom: 12px;
+}
+.type-file{
+    display: block;
+    width: 24px;
+    height: 22.043px;
+    background: url(../img/file/word.png) lightgray 50% / cover no-repeat;
+}
+.file-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+.name-file{
+    width: 548px;
+    color: #000;
+    font-family: "SF Pro Text";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.string-equal{
+    color: #343CED;
+    font-family: "SF Pro Text";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.author-file{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.avt-author{
+    width: 24px;
+    height: 24px;
+    border-radius: 24px;
+    border: 1px solid #FFF;
+    background: url(../img/file/Ellipse\ 1.png) lightgray 50% / cover no-repeat;
+}
+.author{
+    color: #A2A2A2;
+    font-family: "SF Pro Text";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+.note-file{
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.note-file-item{
+    display: flex;
+    padding: 4px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 100px;
+    background: var(--Background-bgSecondary, #F5F7F9);
+}
+.title-note{
+    color: #A2A2A2;
+    font-family: "SF Pro Text";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+.border-bottom-file-item{
+    margin-left: 24px;
+    display: block;
+    width: 676px;
+    height: 1px;
+    flex-shrink: 0;
+    opacity: 0.5;
+    background: #D9D9D9;
+}

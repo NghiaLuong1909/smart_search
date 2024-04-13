@@ -1,0 +1,718 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: SF Pro Text;
+}
+@font-face {
+    font-family: SF Pro Text;
+    src: url(../font/SF-Pro-Text-Medium.otf);
+}
+.container{
+    position: relative;
+    height: 100%;
+}
+.gradient-bg{
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 370px;
+    background-image: linear-gradient(190deg, rgba(255, 255, 255, 0.00) 9.13%, #F5F7FB 98.91%), linear-gradient(244deg, #F1F4FF 35.46%, rgba(255, 207, 207, 0.00) 104.72%);
+}
+.content-wrapper{
+    position: relative;
+    z-index: 1;
+    max-width: 1170px;
+    margin: auto;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    padding-top: 48px;
+}
+.greeting{
+    width: 359.947px;
+    color: #000;
+    font-family: "SF Pro Text";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    padding-bottom: 24px;
+}
+.block-content{
+    display: flex;
+    justify-content: space-between;
+}
+.search-noti-project{
+    display: flex;
+    flex-direction: column;
+}
+.search-noti{
+    display: flex;
+    flex-direction: column;
+    width: 767px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    width: 767px;
+    height: 48px;
+    padding-left: 12px;
+    margin-bottom: 24px;
+    flex-shrink: 0;
+    border: 1px solid #DFE2E8;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 6px 32px 0px rgba(0, 0, 0, 0.06);
+}
+.input-search{
+    border: none;
+    outline: none;
+    color: #000;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 12px;
+    display: block;
+    width: 95%;
+    /* width: 700px; */
+}
+.input-search::placeholder{
+    color: #9A9EA5;
+}
+.notification{
+    display: flex;
+    flex-direction: column;
+    width: 767px;
+    height: 313px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    border: 1px solid #DFE2E8;
+    background-color: #fff;
+    box-shadow: 0px 6px 32px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: 24px;
+}
+.notification-title{
+    color: #000;
+    font-family: "SF Pro Text";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 24px 0 12px 20px;
+}
+.list-notification{
+    width: 767px;
+    height: 230px;
+    display: flex;
+    justify-content: space-around;
+}
+.notification-item:nth-child(1){
+    border-radius: 12px;
+    background: url(../img/Notification/banner1.png) lightgray 50% / cover no-repeat;
+    background-size: 230px 230px;
+    display: flex;
+    align-items: flex-end;
+}
+.notification-item:nth-child(2){
+    border-radius: 12px;
+    background: url(../img/Notification/banner2.png) lightgray 50% / cover no-repeat;
+    background-size: 230px 230px;
+    display: flex;
+    align-items: flex-end;
+}
+.notification-item:nth-child(3){
+    border-radius: 12px;
+    background: url(../img/Notification/banner3.png) lightgray 50% / cover no-repeat;
+    background-size: 230px 230px;
+    display: flex;
+    align-items: flex-end;
+}
+.notification-item:first-child{
+    margin-left: 12px;
+}
+.notification-item:last-child{
+    margin-right: 12px;
+}
+.notification-item--detail{
+    display: flex;
+    flex-direction: column;
+    padding: 0 12px;
+}
+.notification-item:nth-child(1) .notification-item--title{
+    width: 204px;
+    color: #fff;
+    font-family: "SF Pro Text";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20.592px;
+}
+.notification-item:nth-child(2) .notification-item--title{
+    width: 204px;
+    color: #fff;
+    font-family: "SF Pro Text";
+    font-size: 13.728px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20.592px;
+}
+.notification-item:nth-child(3) .notification-item--title{
+    width: 204px;
+    color: #FFF;
+    font-family: "SF Pro Text";
+    font-size: 13.728px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20.592px;
+}
+.notification-item--author{
+    display: flex;
+    align-items: center;
+    padding-bottom: 12px;
+}
+.notification-item--author__name{
+    color: #fff;
+    font-family: "SF Pro Text";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20.592px;
+    padding-left: 12px;
+}
+.project{
+    width: 767px;
+    /* display: inline-flex; */
+    padding: 24px 75px 30px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+    border-radius: 12px;
+    border: 1px solid #DFE2E8;
+    background: #FFF;
+    box-shadow: 0px 6px 32px 0px rgba(0, 0, 0, 0.06);
+}
+.project--title{
+    color: #000;
+    font-family: "SF Pro Text";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+/* #chart--detail{
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+} */
+.chart{
+    width: 511px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.chart--infor{
+    display: flex;
+    width: 304px;
+    align-items: flex-start;
+    gap: 8px;
+}
+.infor--complete,
+.infor--unfinished{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    flex: 1 0 0;
+}
+.quantity-complete,
+.quantity-unfinished{
+    color: var(--Content-contentTertiary, #9A9EA5);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "SF Pro Text";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+.on-time,
+.out-of-date,
+.not-yet-expired,
+.expired{
+    display: flex;
+    padding: 4px 4px 4px 0px;
+    align-items: center;
+    gap: 4px;
+    align-self: stretch;
+    border-radius: 4px;
+    background: var(--Background-bgPrimary, #FFF);
+}
+.on-time--content,
+.out-of-date--content,
+.not-yet-expired--content,
+.expired--content{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    flex: 1 0 0;
+    overflow: hidden;
+    color: var(--Content-contentPrimary, #18202A);
+    font-feature-settings: 'clig' off, 'liga' off;
+    text-overflow: ellipsis;
+    font-family: "SF Pro Text";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+.on-time--status{
+    width: 8px;
+    height: 8px;
+    flex-shrink: 0;
+    background-color: rgb(44, 175, 254);
+    border-radius: 4px;
+}
+.out-of-date--status{
+    width: 8px;
+    height: 8px;
+    flex-shrink: 0;
+    background-color: rgb(84, 79, 197);
+    border-radius: 4px;
+}
+.not-yet-expired--status{
+    width: 8px;
+    height: 8px;
+    flex-shrink: 0;
+    background-color: rgb(0, 226, 114);
+    border-radius: 4px;
+}
+.expired--status{
+    width: 8px;
+    height: 8px;
+    flex-shrink: 0;
+    background-color: rgb(254, 106, 53);
+    border-radius: 4px;
+}
+.concept-product{
+    display: flex;
+    flex-direction: column;
+}
+.concept-intro{
+    display: flex;
+    justify-content: space-between;
+    width: 672px;
+}
+.concept-intro-content{
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+.concept-intro-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #88CACE;
+}
+.concept-intro--title{
+    color: #000;
+    font-family: "SF Pro Text";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.concept-intro--des{
+    color: #A2A2A2;
+    font-family: "SF Pro Text";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+.concept-intro-user{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.avt-concept-intro-user:nth-child(1){
+    position: absolute;
+    top: -2px;
+    left: -20px;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 32px;
+    border: 1px solid #FFF;
+    background: url(../img/Chart/Ellipse\ 1.png) lightgray 50% / cover no-repeat;
+    border: 1px solid #fff;
+}
+.avt-concept-intro-user:nth-child(2){
+    position: absolute;
+    top: -2px;
+    left: 4px;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 32px;
+    border: 1px solid #FFF;
+    background: url(../img/Chart/Ellipse\ 2.png) lightgray 50% / cover no-repeat;
+    border: 1px solid #fff;
+}
+.avt-concept-intro-user:nth-child(3){
+    position: absolute;
+    top: -2px;
+    left: 24px;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 32px;
+    border: 1px solid #FFF;
+    background: url(../img/Chart/Ellipse\ 3.png) lightgray 50% / cover no-repeat;
+    border: 1px solid #fff;
+}
+.concept-intro-user-remaining-quantity{
+    position: absolute;
+    top: 4px;
+    left: 29px;
+    color: #FFF;
+    font-family: "SF Pro Text";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.concept-content{
+    color: #646464;
+    font-family: "SF Pro Text";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 9px 0 13px 0;
+}
+.concept-btn{
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.concept-btn-item{
+    border: none;
+    padding: 4px 12px;
+    border-radius: 100px;
+    background: var(--Background-bgSecondary, #F5F7F9);
+    color: #A2A2A2;
+    font-family: "SF Pro Text";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+/*--------------------------------------- */
+.meeting-schedule{
+    width: 370px;
+    height: 385px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    border: 1px solid #DFE2E8;
+    background: #FFF;
+    box-shadow: 0px 6px 32px 0px rgba(0, 0, 0, 0.06);
+}
+.meeting-schedule--time{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 12px 20px;
+}
+.meeting-schedule--today{
+    color: #000;
+    font-family: "SF Pro Text";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+.view-all{
+    color: #3AB67B;
+    font-family: "SF Pro Text";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+/* .list--meeting-schedule{
+
+} */
+.meeting-schedule-item{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.action::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 125px;
+    border-left: 2px solid #3ab67b;
+    flex-shrink: 0;
+}
+.meeting-schedule-item--intro{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    padding: 0 0 4px 20px;
+}
+.meeting-schedule-item--time{
+    color: #999;
+    font-family: "SF Pro Text";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+.meeting-schedule-item--title{
+    color: #000;
+    font-family: "SF Pro Text";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.meeting-schedule-item--des{
+    /* width: 330px; */
+    color: #646464;
+    font-family: "SF Pro Text";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 4px 20px 12px 20px;
+}
+.participants{
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 4px 0 16px 20px;
+}
+.btn-join{
+    display: flex;
+    padding: 6px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 4px;
+    background: var(--Function-accentWorkSecondary, #3AB67B);
+}
+.btn-join--title{
+    color: #FFF;
+    font-family: "SF Pro Text";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.list-participant{
+    position: relative;
+    display: flex;
+}
+.avt-list-participant:nth-child(1){
+    position: absolute;
+    top: -2px;
+    left: 0px;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 32px;
+    border: 1px solid #FFF;
+    background: url(../img/Meeting-schedule/avt1.png) lightgray 50% / cover no-repeat;
+    border: 1px solid #fff;
+}
+.avt-list-participant:nth-child(2){
+    position: absolute;
+    top: -2px;
+    left: 24px;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 32px;
+    border: 1px solid #FFF;
+    background: url(../img/Meeting-schedule/avt2.png) lightgray 50% / cover no-repeat;
+    border: 1px solid #fff;
+}
+.avt-list-participant:nth-child(3){
+    position: absolute;
+    top: -2px;
+    left: 48px;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 32px;
+    border: 1px solid #FFF;
+    background: url(../img/Meeting-schedule/avt3.png) lightgray 50% / cover no-repeat;
+    border: 1px solid #fff;
+}
+.list-participant-remaining-quantity{
+    position: absolute;
+    top: 3px;
+    left: 53px;
+    color: #FFF;
+    font-family: "SF Pro Text";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.border-bottom--meeting-schedule-item{
+    height: 1px;
+    width: 330px;
+    flex-shrink: 0;
+    background-color: #e2e5ea;
+    margin: 0 20px 16px 20px;
+}
+.event{
+    position: relative;
+    width: 370px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    border: 1px solid #DFE2E8;
+    background: #FFF;
+    box-shadow: 0px 6px 32px 0px rgba(0, 0, 0, 0.06);
+    margin-top: 24px;
+}
+.event--title{
+    color: #000;
+    font-family: "SF Pro Text";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 20px 0 35px 20px;
+}
+.decorate{
+    position: absolute;
+    top: 0;
+    right: 40px;
+}
+.list-event{
+    display: flex;
+    flex-direction: column;
+}
+.event-item{
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    padding: 0 0 20px 20px;
+}
+.event-item:nth-child(1) .avt-event-item{
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+    background: url(../img/Event/avt1.png) lightgray 50% / cover no-repeat;    
+}
+.event-item:nth-child(2) .avt-event-item{
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+    background: url(../img/Event/avt2.png) lightgray 50% / cover no-repeat;    
+}
+.event-item:nth-child(3) .avt-event-item{
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+    background: url(../img/Event/avt3.png) lightgray 50% / cover no-repeat;    
+}
+.event-item:nth-child(4) .avt-event-item{
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+    background: url(../img/Event/avt4.png) lightgray 50% / cover no-repeat;    
+}
+.infor-event-item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.event-item--title{
+    color: #000;
+    font-family: "SF Pro Text";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; 
+}
+.event-item--des{
+    color: #999;
+    font-family: "SF Pro Text";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+/* ---------------------------------------------------- */
+/* Script chart  */
+.pie-title__wrapper {
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.task-count{
+    font-family: "SF Pro Text";
+    font-size: 36px;
+}
+.task-label{
+    font-family: "SF Pro Text";
+    color: #999;
+    font-size: 12px;
+    font-weight: 100;
+}
+/* ---------------------------------------------------- */
+/* Loadding animation */
+.loading-wrapper {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    position: relative;
+    animation: rotate 1s linear infinite
+}
+.loader::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    inset: 0px;
+    border-radius: 50%;
+    border: 5px solid #3ab67b;
+    animation: prixClipFix 2s linear infinite ;
+}
+
+@keyframes rotate {
+    100%   {transform: rotate(360deg)}
+}
+
+@keyframes prixClipFix {
+    0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+    25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+    50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+    75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
+    100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
+}
+  

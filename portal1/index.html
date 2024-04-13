@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/page2.css">
+    <link rel="stylesheet" href="./assets/css/page3.css">
+    <link rel="stylesheet" href="./assets/css/page4.css">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Portal 1</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="gradient-bg"></div>
+        <div class="content-wrapper">
+            <div class="content">
+                <h2 class='greeting'>✋ Xin chào, Uyên</h2>
+                <div class="block-content">
+                    <div class="search-noti-project">
+                        <div class="search-noti">
+                            <div class='search'>
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="Search">
+                                        <circle id="Ellipse_739" cx="9.98172" cy="9.76639" r="8.98856" stroke="#26282C"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path id="Line_181" d="M16.2334 16.4849L19.7574 19.9997" stroke="#26282C"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                </svg>
+                                <input class="input-search" type='text' placeholder='Tìm kiếm thông minh'></input>
+                            </div>
+                        </div>
+                        <div class="main-content-wrapper">
+                            <div class="notification">
+                                <h3 class="notification-title">
+                                    Thông báo tổ chức
+                                </h3>
+                                <div class="list-notification">
+                                    <div class="notification-item">
+                                        <div class="notification-item--detail">
+                                            <h3 class="notification-item--title">
+                                                BIDV đạt giải NHDN tốt nhất Đông Nam Á
+                                            </h3>
+                                            <div class="notification-item--author">
+                                                <img class="notification-item--author__avt"
+                                                    src="./assets/img/Notification/avatar.png" alt="">
+                                                <p class="notification-item--author__name">Nguyễn Văn Minh</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="notification-item">
+                                        <div class="notification-item--detail">
+                                            <h3 class="notification-item--title">
+                                                Ngân hàng cung cấp dịch vụ ngoại hối tốt nhất Việt Nam
+                                            </h3>
+                                            <div class="notification-item--author">
+                                                <img class="notification-item--author__avt"
+                                                    src="./assets/img/Notification/avatar.png" alt="">
+                                                <p class="notification-item--author__name">Nguyễn Văn Minh</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="notification-item">
+                                        <div class="notification-item--detail">
+                                            <h3 class="notification-item--title">
+                                                BIDV đạt giải ngân hàng doanh nghiệp tốt nhất Đông Nam Á
+                                            </h3>
+                                            <div class="notification-item--author">
+                                                <img class="notification-item--author__avt"
+                                                    src="./assets/img/Notification/avatar.png" alt="">
+                                                <p class="notification-item--author__name">Nguyễn Văn Minh</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <h3 class="project--title">
+                                    Dự án bạn tham gia
+                                </h3>
+                                <div class="chart">
+                                    <div id="chart--model">
+
+                                    </div>
+                                    <div class="chart--infor">
+                                        <div class="infor--complete">
+                                            <p class="quantity-complete">200 hoàn thành</p>
+                                            <div class="quantity-complete--detail">
+                                                <div class="on-time">
+                                                    <span class="on-time--status"></span>
+                                                    <p class="on-time--content">150 Đúng hạn</p>
+                                                </div>
+                                                <div class="out-of-date">
+                                                    <span class="out-of-date--status"></span>
+                                                    <p class="out-of-date--content">50 Muộn</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="infor--unfinished">
+                                            <p class="quantity-unfinished">300 Chưa hoàn thành</p>
+                                            <div class="quantity-unfinished--detail">
+                                                <div class="not-yet-expired">
+                                                    <span class="not-yet-expired--status"></span>
+                                                    <p class="not-yet-expired--content">50 Chưa tới hạn</p>
+                                                </div>
+                                                <div class="expired">
+                                                    <span class="expired--status"></span>
+                                                    <p class="expired--content">50 Quá hạn</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="concept-product">
+                                    <div class="concept-intro">
+                                        <div class="concept-intro-content">
+                                            <div class="concept-intro-icon">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.0136 8.22016L11.2003 7.40683C11.0069 7.24016 10.8936 6.9935 10.8869 6.72016C10.8736 6.42016 10.9936 6.12016 11.2136 5.90016L12.0136 5.10016C12.7069 4.40683 12.9669 3.74016 12.7469 3.2135C12.5336 2.6935 11.8736 2.40683 10.9003 2.40683H3.93359V1.8335C3.93359 1.56016 3.70693 1.3335 3.43359 1.3335C3.16026 1.3335 2.93359 1.56016 2.93359 1.8335V14.1668C2.93359 14.4402 3.16026 14.6668 3.43359 14.6668C3.70693 14.6668 3.93359 14.4402 3.93359 14.1668V10.9135H10.9003C11.8603 10.9135 12.5069 10.6202 12.7269 10.0935C12.9469 9.56683 12.6936 8.90683 12.0136 8.22016Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </div>
+
+                                            <div class="concept-intro--detail">
+                                                <h3 class="concept-intro--title">Lên concept Product cho Roadmap Q2</h3>
+                                                <p class="concept-intro--des">
+                                                    Dự án Roadmap Q2 • Kết thúc vào 12:00 1/4/2024
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="concept-intro-user">
+                                            <span class="avt-concept-intro-user"></span>
+                                            <span class="avt-concept-intro-user"></span>
+                                            <span class="avt-concept-intro-user"></span>
+                                            <span class="concept-intro-user-remaining-quantity">+10</span>
+                                        </div>
+                                    </div>
+                                    <p class="concept-content">
+                                        Trao đổi về văn hoá và vận hành dự án đột phá trong các team chuyên môn
+                                    </p>
+                                    <div class="concept-btn">
+                                        <button class="concept-btn-item">3 tài liệu mới</button>
+                                        <button class="concept-btn-item">Nhắn tin với các thành viên</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="meeting-schedule-event">
+                        <div class="meeting-schedule">
+                            <div class="meeting-schedule">
+                                <div class="meeting-schedule--time">
+                                    <h3 class="meeting-schedule--today">Hôm nay</h3>
+                                    <p class="view-all">Xem tất cả</p>
+                                </div>
+                                <div class="list--meeting-schedule">
+                                    <div class="meeting-schedule-item action">
+                                        <div class="meeting-schedule-item--intro">
+                                            <p class="meeting-schedule-item--time">9:30-10:30</p>
+                                            <h3 class="meeting-schedule-item--title">Pitstop Meeting</h3>
+                                        </div>
+                                        <p class="meeting-schedule-item--des">
+                                            Trao đổi về văn hoá và vận hành Dự án đột phá
+                                        </p>
+                                        <div class="participants">
+                                            <div class="btn-join">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 20 20" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M11.6667 3.75H3.33333C2.18274 3.75 1.25 4.68274 1.25 5.83333V14.1667C1.25 15.3173 2.18274 16.25 3.33333 16.25H11.6667C12.8173 16.25 13.75 15.3173 13.75 14.1667V5.83333C13.75 4.68274 12.8173 3.75 11.6667 3.75ZM3.33333 2.5C1.49238 2.5 0 3.99238 0 5.83333V14.1667C0 16.0076 1.49238 17.5 3.33333 17.5H11.6667C13.5076 17.5 15 16.0076 15 14.1667V5.83333C15 3.99238 13.5076 2.5 11.6667 2.5H3.33333Z"
+                                                        fill="white" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M17.0833 7.80696V12.193L18.75 13.393V6.60696L17.0833 7.80696ZM16.1797 6.91725C15.9622 7.07385 15.8333 7.32551 15.8333 7.59353V12.4065C15.8333 12.6745 15.9622 12.9261 16.1797 13.0828L18.6797 14.8828C19.231 15.2796 20 14.8857 20 14.2065V5.79353C20 5.11428 19.231 4.72036 18.6797 5.11725L16.1797 6.91725Z"
+                                                        fill="white" />
+                                                </svg>
+                                                <p class="btn-join--title">Tham gia</p>
+                                            </div>
+                                            <div class="list-participant">
+                                                <span class="avt-list-participant"></span>
+                                                <span class="avt-list-participant"></span>
+                                                <span class="avt-list-participant"></span>
+                                                <span class="list-participant-remaining-quantity">+10</span>
+                                            </div>
+                                        </div>
+                                        <span class="border-bottom--meeting-schedule-item"></span>
+                                    </div>
+                                    <div class="meeting-schedule-item">
+                                        <div class="meeting-schedule-item--intro">
+                                            <p class="meeting-schedule-item--time">9:30-10:30</p>
+                                            <h3 class="meeting-schedule-item--title">Pitstop Meeting</h3>
+                                        </div>
+                                        <p class="meeting-schedule-item--des">
+                                            Trao đổi về văn hoá và vận hành Dự án đột phá
+                                        </p>
+                                    </div>
+                                    <div class="meeting-schedule-item">
+                                        <div class="meeting-schedule-item--intro">
+                                            <p class="meeting-schedule-item--time">9:30-10:30</p>
+                                            <h3 class="meeting-schedule-item--title">Pitstop Meeting</h3>
+                                        </div>
+                                        <p class="meeting-schedule-item--des">
+                                            Trao đổi về văn hoá và vận hành Dự án đột phá
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event">
+                            <h3 class="event--title">
+                                Sự kiện tuần này
+                            </h3>
+                            <div class="decorate">
+                                <svg width="111" height="44" viewBox="0 0 111 44" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.50422 17.2901C0.00667332 13.6825 -0.155205 5.1492 0.0760497 1.3335H6.66664C5.51042 3.8773 3.05924 10.6299 2.50422 17.2901Z"
+                                        fill="#D9C2DE" />
+                                    <path
+                                        d="M2.39329 18.125C1.95328 16.7153 2.0253 15.4338 2.31942 14.5146C2.31942 15.6561 2.31942 16.8703 2.39329 18.125C3.33714 21.1489 6.63691 24.7628 15.1541 26.6555C27.6418 29.4306 35.8514 33.5932 38.3953 35.3276V43.9996C35.8515 42.8434 27.9195 39.4902 16.5417 35.3276C4.78253 31.0255 2.746 24.1149 2.39329 18.125Z"
+                                        fill="#A664E3" />
+                                    <path
+                                        d="M78.7496 24.333C77.4163 23.7997 75.3052 19.4441 74.4163 17.333C61.8831 23.9997 57.8606 34.5552 57.416 38.9997C57.6383 39.7775 59.5496 41.8663 65.4163 43.9997C64.7496 35.6663 74.4163 26.6663 78.7496 24.333Z"
+                                        fill="#71D3FB" />
+                                    <path
+                                        d="M84.4154 22.6708C81.4154 11.0042 69.082 3.3375 68.082 3.00417C70.7487 2.11528 76.9487 0.270833 80.4154 0.00416662C83.882 -0.2625 90.082 12.3375 92.7487 18.6708C90.5265 19.1153 85.7487 20.5375 84.4154 22.6708Z"
+                                        fill="#41B572" />
+                                    <path
+                                        d="M105.082 25.3337L100.082 11.0003L105.082 8.66699C106.638 12.667 109.949 21.0003 110.749 22.3337C111.549 23.667 107.304 24.8892 105.082 25.3337Z"
+                                        fill="#F3CA76" />
+                                    <path d="M41.7493 23.0003L35.416 12.667L49.0827 15.667L41.7493 23.0003Z"
+                                        fill="#FE8D98" />
+                                </svg>
+                            </div>
+                            <div class="list-event">
+                                <div class="event-item">
+                                    <span class="avt-event-item"></span>
+                                    <div class="infor-event-item">
+                                        <h3 class="event-item--title">
+                                            Nguyễn Văn Minh
+                                        </h3>
+                                        <p class="event-item--des">
+                                            Kỷ niệm 3 năm làm việc • 2021 - 2024
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="event-item">
+                                    <span class="avt-event-item"></span>
+                                    <div class="infor-event-item">
+                                        <h3 class="event-item--title">
+                                            Trần Thanh Tân
+                                        </h3>
+                                        <p class="event-item--des">
+                                            Sinh nhật
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="event-item">
+                                    <span class="avt-event-item"></span>
+                                    <div class="infor-event-item">
+                                        <h3 class="event-item--title">
+                                            Trần Thu Trang
+                                        </h3>
+                                        <p class="event-item--des">
+                                            Kỷ niệm 3 năm làm việc • 2021 - 2024
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="event-item">
+                                    <span class="avt-event-item"></span>
+                                    <div class="infor-event-item">
+                                        <h3 class="event-item--title">
+                                            Trần Thanh Tân
+                                        </h3>
+                                        <p class="event-item--des">
+                                            Sinh nhật
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        Highcharts.chart("chart--model", {
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: "pie",
+                width: 200,
+                height: 200,
+            },
+            exporting: {
+                enabled: false,
+            },
+            credits: { enabled: false },
+            legend: {
+                enabled: false,
+                align: "right",
+                verticalAlign: "middle",
+                layout: "vertical",
+            },
+            title: {
+                text: `
+                        <span class="pie-title__wrapper">
+                            <span class="task-count">500</span>
+                            <span class="task-label">CÔNG VIỆC</span>
+                        </span>
+                        `,
+                useHTML: true,
+                verticalAlign: 'middle',
+                style: {
+                    zIndex: 0
+                }
+            },
+            tooltip: {
+                // pointFormat: "{series.name}: <b>{point.percentage:.1f}%</b>",
+                pointFormat: "<b>{point.percentage:.1f}%</b>",
+            },
+            accessibility: {
+                point: {
+                    valueSuffix: "%",
+                },
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: "pointer",
+                    dataLabels: {
+                        enabled: false,
+                    },
+                    showInLegend: true,
+                },
+            },
+            series: [
+                {
+                    name: "Brands",
+                    colorByPoint: true,
+                    innerSize: "82%",
+                    data: [
+                        {
+                            name: "Đúng hạn",
+                            y: 30,
+                        },
+                        {
+                            name: "Muộn",
+                            y: 10,
+                        },
+                        {
+                            name: "Chưa tới hạn",
+                            y: 40,
+                        },
+                        {
+                            name: "Quá hạn",
+                            y: 10,
+                        },
+                        {
+                            name: "Còn lại",
+                            y: 10,
+                        },
+                    ],
+                },
+            ],
+        });
+    </script>
+    <script>
+        function removeAccents(str) {
+            str = str.toLowerCase();
+            str = str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, "a");
+            str = str.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g, "e");
+            str = str.replace(/ì|í|ị|ỉ|ĩ/g, "i");
+            str = str.replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ/g, "o");
+            str = str.replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g, "u");
+            str = str.replace(/ỳ|ý|ỵ|ỷ|ỹ/g, "y");
+            str = str.replace(/đ/g, "d");
+            return str;
+        }
+        function findText(inputText, keys) {
+            const normalizedText = removeAccents(inputText.toLowerCase());
+            const words = normalizedText.split(/\s+/);
+            return words.some((word) => keys.includes(word));
+        }
+        const dataKeys = {
+            page1: [],
+            page2: ['hom', 'nay', 'thu', '2', '3', '4', '5'],
+            page3: ['du', 'an'],
+            page4: ['ngan', 'hang']
+        }
+        $('.input-search').keyup(function () {
+            const value = $(this).val()
+            if (!value) {
+                const defaultHtml = `
+                <div class="notification">
+                                <h3 class="notification-title">
+                                    Thông báo tổ chức
+                                </h3>
+                                <div class="list-notification">
+                                    <div class="notification-item">
+                                        <div class="notification-item--detail">
+                                            <h3 class="notification-item--title">
+                                                BIDV đạt giải NHDN tốt nhất Đông Nam Á
+                                            </h3>
+                                            <div class="notification-item--author">
+                                                <img class="notification-item--author__avt"
+                                                    src="./assets/img/Notification/avatar.png" alt="">
+                                                <p class="notification-item--author__name">Nguyễn Văn Minh</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="notification-item">
+                                        <div class="notification-item--detail">
+                                            <h3 class="notification-item--title">
+                                                Ngân hàng cung cấp dịch vụ ngoại hối tốt nhất Việt Nam
+                                            </h3>
+                                            <div class="notification-item--author">
+                                                <img class="notification-item--author__avt"
+                                                    src="./assets/img/Notification/avatar.png" alt="">
+                                                <p class="notification-item--author__name">Nguyễn Văn Minh</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="notification-item">
+                                        <div class="notification-item--detail">
+                                            <h3 class="notification-item--title">
+                                                BIDV đạt giải ngân hàng doanh nghiệp tốt nhất Đông Nam Á
+                                            </h3>
+                                            <div class="notification-item--author">
+                                                <img class="notification-item--author__avt"
+                                                    src="./assets/img/Notification/avatar.png" alt="">
+                                                <p class="notification-item--author__name">Nguyễn Văn Minh</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <h3 class="project--title">
+                                    Dự án bạn tham gia
+                                </h3>
+                                <div class="chart">
+                                    <div id="chart--model">
+
+                                    </div>
+                                    <div class="chart--infor">
+                                        <div class="infor--complete">
+                                            <p class="quantity-complete">200 hoàn thành</p>
+                                            <div class="quantity-complete--detail">
+                                                <div class="on-time">
+                                                    <span class="on-time--status"></span>
+                                                    <p class="on-time--content">150 Đúng hạn</p>
+                                                </div>
+                                                <div class="out-of-date">
+                                                    <span class="out-of-date--status"></span>
+                                                    <p class="out-of-date--content">50 Muộn</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="infor--unfinished">
+                                            <p class="quantity-unfinished">300 Chưa hoàn thành</p>
+                                            <div class="quantity-unfinished--detail">
+                                                <div class="not-yet-expired">
+                                                    <span class="not-yet-expired--status"></span>
+                                                    <p class="not-yet-expired--content">50 Chưa tới hạn</p>
+                                                </div>
+                                                <div class="expired">
+                                                    <span class="expired--status"></span>
+                                                    <p class="expired--content">50 Quá hạn</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="concept-product">
+                                    <div class="concept-intro">
+                                        <div class="concept-intro-content">
+                                            <div class="concept-intro-icon">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.0136 8.22016L11.2003 7.40683C11.0069 7.24016 10.8936 6.9935 10.8869 6.72016C10.8736 6.42016 10.9936 6.12016 11.2136 5.90016L12.0136 5.10016C12.7069 4.40683 12.9669 3.74016 12.7469 3.2135C12.5336 2.6935 11.8736 2.40683 10.9003 2.40683H3.93359V1.8335C3.93359 1.56016 3.70693 1.3335 3.43359 1.3335C3.16026 1.3335 2.93359 1.56016 2.93359 1.8335V14.1668C2.93359 14.4402 3.16026 14.6668 3.43359 14.6668C3.70693 14.6668 3.93359 14.4402 3.93359 14.1668V10.9135H10.9003C11.8603 10.9135 12.5069 10.6202 12.7269 10.0935C12.9469 9.56683 12.6936 8.90683 12.0136 8.22016Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </div>
+
+                                            <div class="concept-intro--detail">
+                                                <h3 class="concept-intro--title">Lên concept Product cho Roadmap Q2</h3>
+                                                <p class="concept-intro--des">
+                                                    Dự án Roadmap Q2 • Kết thúc vào 12:00 1/4/2024
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="concept-intro-user">
+                                            <span class="avt-concept-intro-user"></span>
+                                            <span class="avt-concept-intro-user"></span>
+                                            <span class="avt-concept-intro-user"></span>
+                                            <span class="concept-intro-user-remaining-quantity">+10</span>
+                                        </div>
+                                    </div>
+                                    <p class="concept-content">
+                                        Trao đổi về văn hoá và vận hành dự án đột phá trong các team chuyên môn
+                                    </p>
+                                    <div class="concept-btn">
+                                        <button class="concept-btn-item">3 tài liệu mới</button>
+                                        <button class="concept-btn-item">Nhắn tin với các thành viên</button>
+                                    </div>
+                                </div>
+                            </div>
+                `
+                $(".main-content-wrapper").html(defaultHtml)
+            }
+            else if (findText(value, dataKeys.page2)) {
+                const loadingHtml = '<div class="loading-wrapper"><span class="loader"></span></div>'
+                $(".main-content-wrapper").html(loadingHtml)
+                setTimeout(() => {
+                    const page2Html = `
+                <div class="job-detail">
+                            <h3 class="current-time">Thứ 2 ngày 1/4/2024</h3>
+                            <p class="total-job">6 công việc và 3 cuộc họp cần giải quyết</p>
+                            <div class="type-job">
+                                <a href="#" class="type-job-btn">Tất cả</a>
+                                <a href="#" class="type-job-btn">Công việc</a>
+                                <a href="#" class="type-job-btn">Lịch họp</a>
+                            </div>
+                            <div class="list-job">
+                                <div class="job-item">
+                                    <div class="job-title">
+                                        <div class="avt-detail-job">
+                                            <span class="border-left-job-title"></span>
+                                            <div class="job-title-detail">
+                                                <h3 class="name-job">Pitstop Meeting</h3>
+                                                <p class="des-job">9:30-10:30 • Thứ 2 hàng tuần</p>
+                                            </div>
+                                        </div>
+                                        <div class="job-title-user">
+                                            <div class="job-title-avt-user">
+                                                <span class="avt-user"></span>
+                                                <span class="avt-user"></span>
+                                                <span class="avt-user"></span>
+                                                <span class="remaining-quantity">+10</span>
+                                            </div>
+                                            <div class="job-title-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M21.15 6.17C20.74 5.95 19.88 5.72 18.71 6.54L17.24 7.58C17.13 4.47 15.78 3.25 12.5 3.25H6.5C3.08 3.25 1.75 4.58 1.75 8V16C1.75 18.3 3 20.75 6.5 20.75H12.5C15.78 20.75 17.13 19.53 17.24 16.42L18.71 17.46C19.33 17.9 19.87 18.04 20.3 18.04C20.67 18.04 20.96 17.93 21.15 17.83C21.56 17.62 22.25 17.05 22.25 15.62V8.38C22.25 6.95 21.56 6.38 21.15 6.17ZM11 11.38C9.97 11.38 9.12 10.54 9.12 9.5C9.12 8.46 9.97 7.62 11 7.62C12.03 7.62 12.88 8.46 12.88 9.5C12.88 10.54 12.03 11.38 11 11.38Z" fill="#343CED"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="content-job">Trao đổi về văn hoá và vận hành dự án đột phá trong các team chuyên môn</p>
+                                    <div class="list-note">
+                                        <p class="note-content">Meeting notes 2</p>
+                                    </div>
+                                </div>
+                                <div class="job-item">
+                                    <div class="job-title">
+                                        <div class="avt-detail-job">
+                                            <span class="avt-job icon-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M12.0136 8.22016L11.2003 7.40683C11.0069 7.24016 10.8936 6.9935 10.8869 6.72016C10.8736 6.42016 10.9936 6.12016 11.2136 5.90016L12.0136 5.10016C12.7069 4.40683 12.9669 3.74016 12.7469 3.2135C12.5336 2.6935 11.8736 2.40683 10.9003 2.40683H3.93359V1.8335C3.93359 1.56016 3.70693 1.3335 3.43359 1.3335C3.16026 1.3335 2.93359 1.56016 2.93359 1.8335V14.1668C2.93359 14.4402 3.16026 14.6668 3.43359 14.6668C3.70693 14.6668 3.93359 14.4402 3.93359 14.1668V10.9135H10.9003C11.8603 10.9135 12.5069 10.6202 12.7269 10.0935C12.9469 9.56683 12.6936 8.90683 12.0136 8.22016Z" fill="white"/>
+                                                </svg>
+                                            </span>
+                                            <div class="job-title-detail">
+                                                <h3 class="name-job">Lên concept Product cho Roadmap Q2</h3>
+                                                <p class="des-job">Dự án Roadmap Q2 • Kết thúc vào 12:00 1/4/2024</p>
+                                            </div>
+                                        </div>
+                                        <div class="job-title-user">
+                                            <div class="job-title-avt-user">
+                                                <span class="avt-user"></span>
+                                                <span class="avt-user"></span>
+                                                <span class="avt-user"></span>
+                                                <span class="remaining-quantity">+10</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="content-job">Trao đổi về văn hoá và vận hành dự án đột phá trong các team chuyên môn</p>
+                                    <div class="list-note">
+                                        <p class="note-content">3 tài liệu mới</p>
+                                        <p class="note-content">Nhắn tin với các thành viên</p>
+                                    </div>
+                                </div>
+                                <div class="break-time">
+                                    <p class="time">Nghỉ trưa 12:00 - 13:30</p>
+                                </div>
+                                <div class="job-item">
+                                    <div class="job-title">
+                                        <div class="avt-detail-job">
+                                            <span class="avt-job icon-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M9.56618 1.3335H6.43285C5.73952 1.3335 5.17285 1.8935 5.17285 2.58683V3.2135C5.17285 3.90683 5.73285 4.46683 6.42618 4.46683H9.56618C10.2595 4.46683 10.8195 3.90683 10.8195 3.2135V2.58683C10.8262 1.8935 10.2595 1.3335 9.56618 1.3335Z" fill="white"/>
+                                                    <path d="M11.4934 3.21332C11.4934 4.27332 10.6267 5.13999 9.56669 5.13999H6.43336C5.37336 5.13999 4.50669 4.27332 4.50669 3.21332C4.50669 2.83999 4.10669 2.60665 3.77336 2.77999C2.83336 3.27999 2.19336 4.27332 2.19336 5.41332V11.6867C2.19336 13.3267 3.53336 14.6667 5.17336 14.6667H10.8267C12.4667 14.6667 13.8067 13.3267 13.8067 11.6867V5.41332C13.8067 4.27332 13.1667 3.27999 12.2267 2.77999C11.8934 2.60665 11.4934 2.83999 11.4934 3.21332ZM10.2267 8.48665L7.56003 11.1533C7.46003 11.2533 7.33336 11.3 7.20669 11.3C7.08003 11.3 6.95336 11.2533 6.85336 11.1533L5.85336 10.1533C5.66003 9.95999 5.66003 9.63999 5.85336 9.44665C6.04669 9.25332 6.36669 9.25332 6.56003 9.44665L7.20669 10.0933L9.52003 7.77999C9.71336 7.58665 10.0334 7.58665 10.2267 7.77999C10.42 7.97332 10.42 8.29332 10.2267 8.48665Z" fill="white"/>
+                                                </svg>
+                                            </span>
+                                            <div class="job-title-detail">
+                                                <h3 class="name-job">Duyệt giao diện HRM Profile</h3>
+                                                <p class="des-job">Dự án HRM • Kết thúc vào 13:45 1/4/2024</p>
+                                            </div>
+                                        </div>
+                                        <div class="job-title-user">
+                                            <div class="job-title-avt-user">
+                                                <span class="avt-user"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="content-job">Lê Văn Dũng đã hoàn thành hôm qua - Công việc đang chờ bạn phê duyệt</p>
+                                    <div class="list-note">
+                                        <p class="note-content">3 tài liệu mới</p>
+                                        <p class="note-content">Nhắn tin với các thành viên</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                `
+                    $(".main-content-wrapper").html(page2Html)
+                }, 1000)
+            } 
+            else if (findText(value, dataKeys.page3)) {
+                const loadingHtml = '<div class="loading-wrapper"><span class="loader"></span></div>'
+                $(".main-content-wrapper").html(loadingHtml)
+                setTimeout(() => {
+                    const page3Html = `
+                    <div class="project-equal-input-value">
+                            <div class="project-equal-input-value--intro">
+                                <div class="project-equal-input-value--name">
+                                    <h3 class="project-equal-input-value--title">
+                                        HRM PROJECT
+                                    </h3>
+                                    <p class="project-equal-input-value--des">
+                                        324 công việc • 12 thành viên • Kết thúc vào 31/12/2024
+                                    </p>
+                                </div>
+                                <a href="#" class="project-equal-input-value--button">Xem chi tiết</a>
+                            </div>
+                            <div class="chart">
+                                <div id="chart--model">
+                                
+                                </div>
+                                <div class="chart--infor">
+                                    <div class="infor--complete">
+                                        <p class="quantity-complete">200 hoàn thành</p>
+                                        <div class="quantity-complete--detail">
+                                            <div class="on-time">
+                                                <span class="on-time--status"></span>
+                                                <p class="on-time--content">150 Đúng hạn</p>
+                                            </div>
+                                            <div class="out-of-date">
+                                                <span class="out-of-date--status"></span>
+                                                <p class="out-of-date--content">50 Muộn</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="infor--unfinished">
+                                        <p class="quantity-unfinished">300 Chưa hoàn thành</p>
+                                        <div class="quantity-unfinished--detail">
+                                            <div class="not-yet-expired">
+                                                <span class="not-yet-expired--status"></span>
+                                                <p class="not-yet-expired--content">50 Chưa tới hạn</p>
+                                            </div>
+                                            <div class="expired">
+                                                <span class="expired--status"></span>
+                                                <p class="expired--content">50 Quá hạn</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project--detail">
+                                <div class="pm-document">
+                                    <div class="project-manage">
+                                        <span class="avt-pm"></span>
+                                        <div class="project-manage--infor">
+                                            <p class="project-manage--name">Vũ Quang Nghĩa</p>
+                                            <p class="project-manage--des">Quản lý dự án • Head of Product</p>
+                                        </div>
+                                    </div>
+                                    <span class="border-between-pm-prj"></span>
+                                    <div class="document-project">
+                                        <span class="avt-doc">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.84091 2.25C2.58156 2.25 0.75 4.11548 0.75 6.41667V8.49986H23.25C23.2499 6.19874 21.4184 4.33333 19.1591 4.33333H12L10.8532 3.16529C10.2778 2.57924 9.4974 2.25 8.68366 2.25H4.84091ZM23.25 9.54153H0.75V16.8333C0.75 19.1345 2.58156 21 4.84091 21H19.1591C21.4184 21 23.25 19.1345 23.25 16.8333V9.54153Z" fill="url(#paint0_linear_2108_5652)"/>
+                                                <defs>
+                                                <linearGradient id="paint0_linear_2108_5652" x1="12.75" y1="2.25" x2="12.75" y2="21.8864" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#57D7FF"/>
+                                                <stop offset="1" stop-color="#3C82FB"/>
+                                                </linearGradient>
+                                                </defs>
+                                            </svg>
+                                        </span>
+                                        <div class="document-project--infor">
+                                            <p class="document-project--name">HRM Document</p>
+                                            <p class="document-project--des">Gapo Drive • 12 thư mục và 150 file</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="border-bottom-pm-document"></span>
+                                <div class="daily-meeting">
+                                    <div class="daily-meeting--detail">
+                                        <div class="daily-meeting--intro">
+                                            <span class="border-left-daily-meeting--intro"></span>
+                                            <div class="daily-meeting--intro--detail">
+                                                <p class="daily-meeting--title">
+                                                    [HRM] Daily Meeting
+                                                </p>
+                                                <p class="daily-meeting--des">
+                                                    8:30-9:00 • Tất cả ngày làm việc
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="daily-meeting-user">
+                                            <div class="daily-meeting-avt-user">
+                                                <span class="avt-user"></span>
+                                                <span class="avt-user"></span>
+                                                <span class="avt-user"></span>
+                                                <span class="remaining-quantity">+10</span>
+                                            </div>
+                                            <div class="daily-meeting-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M21.15 6.17C20.74 5.95 19.88 5.72 18.71 6.54L17.24 7.58C17.13 4.47 15.78 3.25 12.5 3.25H6.5C3.08 3.25 1.75 4.58 1.75 8V16C1.75 18.3 3 20.75 6.5 20.75H12.5C15.78 20.75 17.13 19.53 17.24 16.42L18.71 17.46C19.33 17.9 19.87 18.04 20.3 18.04C20.67 18.04 20.96 17.93 21.15 17.83C21.56 17.62 22.25 17.05 22.25 15.62V8.38C22.25 6.95 21.56 6.38 21.15 6.17ZM11 11.38C9.97 11.38 9.12 10.54 9.12 9.5C9.12 8.46 9.97 7.62 11 7.62C12.03 7.62 12.88 8.46 12.88 9.5C12.88 10.54 12.03 11.38 11 11.38Z" fill="#343CED"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="daily-meeting--content">
+                                        Trao đổi về văn hoá và vận hành dự án đột phá trong các team chuyên môn
+                                    </p>
+                                    <p class="daily-meeting--note">
+                                        Meeting notes 2
+                                    </p>
+                                </div>
+                                <span class="border-bottom-daily-meeting"></span>
+                                <div class="infor-project">
+                                    <div class="project-intro">
+                                        <div class="project-intro-content">
+                                            <div class="project-intro-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 10.015C0 4.74712 4.21 0 10.02 0C15.7 0 20 4.65699 20 9.98498C20 16.1642 14.96 20 10 20C8.36 20 6.54 19.5593 5.08 18.698C4.57 18.3876 4.14 18.1572 3.59 18.3375L1.57 18.9384C1.06 19.0986 0.6 18.698 0.75 18.1572L1.42 15.9139C1.53 15.6034 1.51 15.2729 1.35 15.0125C0.49 13.4301 0 11.6975 0 10.015ZM8.7 10.015C8.7 10.7261 9.27 11.2969 9.98 11.307C10.69 11.307 11.26 10.7261 11.26 10.025C11.26 9.31397 10.69 8.74311 9.98 8.74311C9.28 8.7331 8.7 9.31397 8.7 10.015ZM13.31 10.025C13.31 10.7261 13.88 11.307 14.59 11.307C15.3 11.307 15.87 10.7261 15.87 10.025C15.87 9.31397 15.3 8.74311 14.59 8.74311C13.88 8.74311 13.31 9.31397 13.31 10.025ZM5.37 11.307C4.67 11.307 4.09 10.7261 4.09 10.025C4.09 9.31397 4.66 8.74311 5.37 8.74311C6.08 8.74311 6.65 9.31397 6.65 10.025C6.65 10.7261 6.08 11.2969 5.37 11.307Z" fill="#18BAFF"/>
+                                                </svg>
+                                            </div>
+                                            <div class="project-intro--detail">
+                                                <h3 class="project-intro--title">HRM Project</h3>
+                                                <p class="project-intro--des">
+                                                    Nhóm chat dự án
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="project-intro-user">
+                                            <span class="avt-project-intro-user"></span>
+                                            <span class="avt-project-intro-user"></span>
+                                            <span class="avt-project-intro-user"></span>
+                                            <span class="project-intro-user-remaining-quantity">+10</span>
+                                        </div>
+                                    </div>
+                                    <div class="infor-project-btn">
+                                        <a href="#" class="infor-project-btn-item">12 tài liệu mới trong tuần trước</a>
+                                        <a href="#" class="infor-project-btn-item">Nhắn tin với các thành viên</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>`
+                    $(".main-content-wrapper").html(page3Html)
+                }, 1000)
+
+            } 
+            else if (findText(value, dataKeys.page4)) {
+                const loadingHtml = '<div class="loading-wrapper"><span class="loader"></span></div>'
+                $(".main-content-wrapper").html(loadingHtml)
+                setTimeout(() => {
+                    const page4Html = `
+                <div class="file-equal-input-value">
+                                <div class="file-item">
+                                    <div class="file-detail">
+                                        <span class="type-file"></span>
+                                        <div class="file-content">
+                                            <h3 class="name-file">Thông tư 11/2022/TT-NHNN quy định về <span class="string-equal">bảo lãnh ngân hàng</span> do Thống đốc Ngân hàng Nhà nước Việt Nam ban hành</h3>
+                                            <div class="author-file">
+                                                <span class="avt-author"></span>
+                                                <p class="author">Nguyễn Văn Minh • 24/12/2023 • Gapo Drive</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="note-file">
+                                        <div class="note-file-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M12 8L13.2533 5.25333L16 4L13.2533 2.74667L12 0L10.7467 2.74667L8 4L10.7467 5.25333L12 8ZM7 9L5.33333 5.33333L3.66667 9L0 10.6667L3.66667 12.3333L5.33333 16L7 12.3333L10.6667 10.6667L7 9Z" fill="url(#paint0_linear_2108_6137)"/>
+                                                <defs>
+                                                <linearGradient id="paint0_linear_2108_6137" x1="15.1579" y1="-1.71429" x2="-1.97589" y2="3.83709" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#D74FF9"/>
+                                                <stop offset="1" stop-color="#F75627"/>
+                                                </linearGradient>
+                                                </defs>
+                                            </svg>
+                                            <p class="title-note">Tóm tắt tài liệu</p>
+                                        </div>
+                                        <div class="note-file-item">
+                                            <p class="title-note">Yêu cầu quyền truy cập</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="border-bottom-file-item"></span>
+                                <div class="file-item">
+                                    <div class="file-detail">
+                                        <span class="type-file"></span>
+                                        <div class="file-content">
+                                            <h3 class="name-file">Thông tư 11/2022/TT-NHNN quy định về <span class="string-equal">bảo lãnh ngân hàng</span> do Thống đốc Ngân hàng Nhà nước Việt Nam ban hành</h3>
+                                            <div class="author-file">
+                                                <span class="avt-author"></span>
+                                                <p class="author">Nguyễn Văn Minh • 24/12/2023 • Gapo Drive</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="note-file">
+                                        <div class="note-file-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M12 8L13.2533 5.25333L16 4L13.2533 2.74667L12 0L10.7467 2.74667L8 4L10.7467 5.25333L12 8ZM7 9L5.33333 5.33333L3.66667 9L0 10.6667L3.66667 12.3333L5.33333 16L7 12.3333L10.6667 10.6667L7 9Z" fill="url(#paint0_linear_2108_6137)"/>
+                                                <defs>
+                                                <linearGradient id="paint0_linear_2108_6137" x1="15.1579" y1="-1.71429" x2="-1.97589" y2="3.83709" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#D74FF9"/>
+                                                <stop offset="1" stop-color="#F75627"/>
+                                                </linearGradient>
+                                                </defs>
+                                            </svg>
+                                            <p class="title-note">Tóm tắt tài liệu</p>
+                                        </div>
+                                        <div class="note-file-item">
+                                            <p class="title-note">Yêu cầu quyền truy cập</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>`
+                    $(".main-content-wrapper").html(page4Html)
+                }, 1000)
+            } else {
+                const loadingHtml = '<div class="loading-wrapper"><span class="loader"></span></div>'
+                $(".main-content-wrapper").html(loadingHtml)
+                setTimeout(() => { 
+                    const defaultHtml = `
+                <div class="notification">
+                                <h3 class="notification-title">
+                                    Thông báo tổ chức
+                                </h3>
+                                <div class="list-notification">
+                                    <div class="notification-item">
+                                        <div class="notification-item--detail">
+                                            <h3 class="notification-item--title">
+                                                BIDV đạt giải NHDN tốt nhất Đông Nam Á
+                                            </h3>
+                                            <div class="notification-item--author">
+                                                <img class="notification-item--author__avt"
+                                                    src="./assets/img/Notification/avatar.png" alt="">
+                                                <p class="notification-item--author__name">Nguyễn Văn Minh</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="notification-item">
+                                        <div class="notification-item--detail">
+                                            <h3 class="notification-item--title">
+                                                Ngân hàng cung cấp dịch vụ ngoại hối tốt nhất Việt Nam
+                                            </h3>
+                                            <div class="notification-item--author">
+                                                <img class="notification-item--author__avt"
+                                                    src="./assets/img/Notification/avatar.png" alt="">
+                                                <p class="notification-item--author__name">Nguyễn Văn Minh</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="notification-item">
+                                        <div class="notification-item--detail">
+                                            <h3 class="notification-item--title">
+                                                BIDV đạt giải ngân hàng doanh nghiệp tốt nhất Đông Nam Á
+                                            </h3>
+                                            <div class="notification-item--author">
+                                                <img class="notification-item--author__avt"
+                                                    src="./assets/img/Notification/avatar.png" alt="">
+                                                <p class="notification-item--author__name">Nguyễn Văn Minh</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <h3 class="project--title">
+                                    Dự án bạn tham gia
+                                </h3>
+                                <div class="chart">
+                                    <div id="chart--model">
+
+                                    </div>
+                                    <div class="chart--infor">
+                                        <div class="infor--complete">
+                                            <p class="quantity-complete">200 hoàn thành</p>
+                                            <div class="quantity-complete--detail">
+                                                <div class="on-time">
+                                                    <span class="on-time--status"></span>
+                                                    <p class="on-time--content">150 Đúng hạn</p>
+                                                </div>
+                                                <div class="out-of-date">
+                                                    <span class="out-of-date--status"></span>
+                                                    <p class="out-of-date--content">50 Muộn</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="infor--unfinished">
+                                            <p class="quantity-unfinished">300 Chưa hoàn thành</p>
+                                            <div class="quantity-unfinished--detail">
+                                                <div class="not-yet-expired">
+                                                    <span class="not-yet-expired--status"></span>
+                                                    <p class="not-yet-expired--content">50 Chưa tới hạn</p>
+                                                </div>
+                                                <div class="expired">
+                                                    <span class="expired--status"></span>
+                                                    <p class="expired--content">50 Quá hạn</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="concept-product">
+                                    <div class="concept-intro">
+                                        <div class="concept-intro-content">
+                                            <div class="concept-intro-icon">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12.0136 8.22016L11.2003 7.40683C11.0069 7.24016 10.8936 6.9935 10.8869 6.72016C10.8736 6.42016 10.9936 6.12016 11.2136 5.90016L12.0136 5.10016C12.7069 4.40683 12.9669 3.74016 12.7469 3.2135C12.5336 2.6935 11.8736 2.40683 10.9003 2.40683H3.93359V1.8335C3.93359 1.56016 3.70693 1.3335 3.43359 1.3335C3.16026 1.3335 2.93359 1.56016 2.93359 1.8335V14.1668C2.93359 14.4402 3.16026 14.6668 3.43359 14.6668C3.70693 14.6668 3.93359 14.4402 3.93359 14.1668V10.9135H10.9003C11.8603 10.9135 12.5069 10.6202 12.7269 10.0935C12.9469 9.56683 12.6936 8.90683 12.0136 8.22016Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </div>
+
+                                            <div class="concept-intro--detail">
+                                                <h3 class="concept-intro--title">Lên concept Product cho Roadmap Q2</h3>
+                                                <p class="concept-intro--des">
+                                                    Dự án Roadmap Q2 • Kết thúc vào 12:00 1/4/2024
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="concept-intro-user">
+                                            <span class="avt-concept-intro-user"></span>
+                                            <span class="avt-concept-intro-user"></span>
+                                            <span class="avt-concept-intro-user"></span>
+                                            <span class="concept-intro-user-remaining-quantity">+10</span>
+                                        </div>
+                                    </div>
+                                    <p class="concept-content">
+                                        Trao đổi về văn hoá và vận hành dự án đột phá trong các team chuyên môn
+                                    </p>
+                                    <div class="concept-btn">
+                                        <button class="concept-btn-item">3 tài liệu mới</button>
+                                        <button class="concept-btn-item">Nhắn tin với các thành viên</button>
+                                    </div>
+                                </div>
+                            </div>
+                `
+                    $(".main-content-wrapper").html(defaultHtml)
+                }, 1000)
+
+            }
+        });
+    </script>
+</body>
+
+</html>
