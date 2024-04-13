@@ -6,6 +6,8 @@
     border: 1px solid #DFE2E8;
     background: #FFF;
     box-shadow: 0px 6px 32px 0px rgba(0, 0, 0, 0.06);
+    /* ------------------------------------------------------------------------------ */
+    transition: opacity 5s, transform 0.5s;
 }
 .current-time{
     color: #000;
@@ -69,6 +71,8 @@
     display: flex;
     flex-direction: column;
     padding: 0 0 24px 0;
+    /* Animation */  
+    transition: opacity 5s, transform 0.5s;
 }
 .job-item{
     margin: 0 32px 0 24px;
@@ -283,6 +287,7 @@
     padding: 10px 575px 8px 23px;
     align-items: center;
     background: #F6F8FD;
+    transition: opacity 0.5s, transform 0.5s;
 }
 .time{
     color: #A2A2A2;
@@ -292,4 +297,32 @@
     font-weight: 500;
     line-height: 20px;
     min-width: max-content;
+    animation: fadeInUp 2.5s ;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------- */
+.job-item:nth-child(1) {
+    animation: fadeInUp 1.5s ;
+}
+  
+.job-item:nth-child(2) {
+    animation: fadeInUp 2.2s;
+}
+  
+.job-item:nth-child(4) {
+    animation: fadeInUp 2.9s;
+}
+  
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+}
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
 }

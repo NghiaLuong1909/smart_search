@@ -6,6 +6,7 @@
     border: 1px solid #DFE2E8;
     background: #FFF;
     box-shadow: 0px 6px 32px 0px rgba(0, 0, 0, 0.06);
+    transition: opacity 5s, transform 0.5s;
 }
 .file-item{
     display: flex;
@@ -97,4 +98,23 @@
     flex-shrink: 0;
     opacity: 0.5;
     background: #D9D9D9;
+}
+/* ------------------------------------------------------------- */
+.file-item:nth-child(1) {
+    animation: fadeInUp 1.5s ;
+}
+  
+.file-item:nth-child(3) {
+    animation: fadeInUp 2.2s;
+}
+  
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+}
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
 }

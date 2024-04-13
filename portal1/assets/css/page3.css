@@ -8,6 +8,7 @@
     border: 1px solid #DFE2E8;
     background: #FFF;
     box-shadow: 0px 6px 32px 0px rgba(0, 0, 0, 0.06);
+    transition: opacity 5s, transform 0.5s;
 }
 .project-equal-input-value--intro{
     width: 767px;
@@ -429,4 +430,33 @@
     font-style: normal;
     font-weight: 700;
     line-height: 20px;
+}
+/* ------------------------------------------------------------- */
+.project-equal-input-value--intro{
+    animation: fadeInUp 1.5s ;
+}
+.chart{
+    animation: fadeInUp 2.2s ;
+}
+.project--detail{
+    animation: fadeInUp 2.9s ;
+}
+.pm-document{
+    animation: fadeInUp 3.1s ;
+}
+.daily-meeting{
+    animation: fadeInUp 3.4s ;
+}
+.infor-project{
+    animation: fadeInUp 3.8s ;
+}
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+}
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
 }
