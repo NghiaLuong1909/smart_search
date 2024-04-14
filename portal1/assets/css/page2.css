@@ -11,7 +11,6 @@
 }
 .current-time{
     color: #000;
-    font-family: "SF Pro Text";
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -20,7 +19,6 @@
 }
 .total-job{
     color: #343CED;
-    font-family: "SF Pro Text";
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
@@ -44,7 +42,6 @@
     border: 1px solid var(--Line-linePrimary, #DADDE1);
     background: var(--Background-bgSecondary, #F5F7F9);
     color: #A2A2A2;
-    font-family: "SF Pro Text";
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
@@ -61,7 +58,6 @@
     border: 1px solid var(--Line-linePrimary, #DADDE1);
     background: var(--Background-bgSecondary, #F5F7F9);
     color: #656565;
-    font-family: "SF Pro Text";
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
@@ -71,7 +67,7 @@
     display: flex;
     flex-direction: column;
     padding: 0 0 24px 0;
-    /* Animation */  
+    /* Animation */
     transition: opacity 5s, transform 0.5s;
 }
 .job-item{
@@ -106,7 +102,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0;
 }
 .icon-1 {
     background-color: #88CACE;
@@ -116,7 +111,6 @@
 }
 .name-job{
     color: #000;
-    font-family: "SF Pro Text";
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -125,7 +119,6 @@
 }
 .des-job{
     color: #A2A2A2;
-    font-family: "SF Pro Text";
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
@@ -173,7 +166,6 @@
     top: 6px;
     right: 68px;
     color: #fff;
-    font-family: "SF Pro Text";
     font-size: 11px;
     font-style: normal;
     font-weight: 500;
@@ -217,7 +209,6 @@
     top: -6px;
     right: 14px;
     color: #fff;
-    font-family: "SF Pro Text";
     font-size: 11px;
     font-style: normal;
     font-weight: 500;
@@ -234,13 +225,7 @@
     border: 1px solid #FFF;
     background: url(../img/project/avt1.png) lightgray 50% / cover no-repeat;
 }
-/* .border-bottom-job-item{
-    width: 709px;
-    height: 1px;
-    flex-shrink: 0;
-    fill: #DADDE1;
-    opacity: 0.5;
-} */
+
 .job-title-icon{
     display: flex;
     padding: 4px 12px;
@@ -253,7 +238,6 @@
 }
 .content-job{
     color: #646464;
-    font-family: "SF Pro Text";
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
@@ -275,7 +259,6 @@
     border-radius: 100px;
     background: var(--Background-bgSecondary, #F5F7F9);
     color: #A2A2A2;
-    font-family: "SF Pro Text";
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
@@ -287,42 +270,34 @@
     padding: 10px 575px 8px 23px;
     align-items: center;
     background: #F6F8FD;
-    transition: opacity 0.5s, transform 0.5s;
 }
 .time{
     color: #A2A2A2;
-    font-family: "SF Pro Text";
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
     line-height: 20px;
     min-width: max-content;
-    animation: fadeInUp 2.5s ;
+    -webkit-animation: slide-top 0.5s ease-out both;
+    animation: slide-top 0.5s ease-out both;
+    animation-delay: 0.6s;
 }
-
-
 
 
 /* ----------------------------------------------------------------------------------- */
 .job-item:nth-child(1) {
-    animation: fadeInUp 1.5s ;
+    -webkit-animation: slide-top 0.5s ease-out both;
+    animation: slide-top 0.5s ease-out both;
 }
-  
+
 .job-item:nth-child(2) {
-    animation: fadeInUp 2.2s;
+    -webkit-animation: slide-top 0.5s ease-out both;
+    animation: slide-top 0.5s ease-out both;
+    animation-delay: 0.2s;
 }
-  
+
 .job-item:nth-child(4) {
-    animation: fadeInUp 2.9s;
-}
-  
-@keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-}
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    -webkit-animation: slide-top 0.5s ease-out both;
+    animation: slide-top 0.5s ease-out both;
+    animation-delay: 0.4s;
 }

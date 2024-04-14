@@ -715,3 +715,23 @@
     75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
     100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
 }
+
+
+.clean-button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.clean-button:hover {
+    background-color: #ddd !important;
+}
+
+.hidden {
+    display: none;
+}

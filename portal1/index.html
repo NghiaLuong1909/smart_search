@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/font.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/animation.css">
     <link rel="stylesheet" href="./assets/css/page2.css">
     <link rel="stylesheet" href="./assets/css/page3.css">
     <link rel="stylesheet" href="./assets/css/page4.css">
@@ -37,6 +38,11 @@
                                     </g>
                                 </svg>
                                 <input class="input-search" type='text' placeholder='Tìm kiếm thông minh'></input>
+                                <button class="clean-button hidden">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.96967 3.96967C4.26256 3.67678 4.73744 3.67678 5.03033 3.96967L10 8.93934L14.9697 3.96967C15.2626 3.67678 15.7374 3.67678 16.0303 3.96967C16.3232 4.26256 16.3232 4.73744 16.0303 5.03033L11.0607 10L16.0303 14.9697C16.3232 15.2626 16.3232 15.7374 16.0303 16.0303C15.7374 16.3232 15.2626 16.3232 14.9697 16.0303L10 11.0607L5.03033 16.0303C4.73744 16.3232 4.26256 16.3232 3.96967 16.0303C3.67678 15.7374 3.67678 15.2626 3.96967 14.9697L8.93934 10L3.96967 5.03033C3.67678 4.73744 3.67678 4.26256 3.96967 3.96967Z" fill="#73787E"/>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
                         <div class="popover">
@@ -89,10 +95,10 @@
                                 <h3 class="project--title">
                                     Dự án bạn tham gia
                                 </h3>
-                                <div class="chart">
+                                <div class="chart1">
                                     <div id="chart--model">
                                     </div>
-                                    <div class="chart--infor">
+                                    <div class="chart1--infor">
                                         <div class="infor--complete">
                                             <p class="quantity-complete">200 hoàn thành</p>
                                             <div class="quantity-complete--detail">
@@ -395,19 +401,29 @@
             const words = normalizedText.split(/\s+/);
             return words.some((word) => keys.includes(word));
         }
+        $('.clean-button').click(function () {
+            $(".popover").removeClass('open-popover').html('')
+            $(".input-search").val('')
+            $('.clean-button').addClass('hidden')
+        })
         const dataKeys = {
-            page1: [],
             page2: ['hom', 'nay', 'thu', '2', '3', '4', '5'],
             page3: ['du', 'an'],
             page4: ['ngan', 'hang']
         }
         $('.input-search').keyup(function () {
             const value = $(this).val()
+            $('.clean-button').removeClass('hidden')
+            if(this.timeout) {
+                clearTimeout(this.timeout)
+            }
             if (findText(value, dataKeys.page2)) {
-                setTimeout(() => {
+                const today = new Date()
+                const weekday = ["Chủ nhật","Thứ 2","Thứ 3","Thứ 4","Thứ 5","Thứ 6","Thứ 7"];
+                this.timeout = setTimeout(() => {
                     const page2Html = `
                         <div class="job-detail">
-                            <h3 class="current-time">Thứ 2 ngày 1/4/2024</h3>
+                            <h3 class="current-time">${weekday[today.getDay()]} ngày ${today.toLocaleDateString("vi")}</h3>
                             <p class="total-job">6 công việc và 3 cuộc họp cần giải quyết</p>
                             <div class="type-job">
                                 <a href="#" class="type-job-btn">Tất cả</a>
@@ -507,7 +523,7 @@
                 }, 500)
             }
             else if (findText(value, dataKeys.page3)) {
-                setTimeout(() => {
+                this.timeout = setTimeout(() => {
                     const page3Html = `
                     <div class="project-equal-input-value">
                             <div class="project-equal-input-value--intro">
@@ -652,7 +668,7 @@
                 }, 500)
             }
             else if (findText(value, dataKeys.page4)) {
-                setTimeout(() => {
+                this.timeout = setTimeout(() => {
                     const page4Html = `
                         <div class="file-equal-input-value">
                                 <div class="file-item">
@@ -719,6 +735,7 @@
                 }, 500)
             } else {
                 $(".popover").removeClass('open-popover').html('')
+                $('.clean-button').addClass('hidden')
             }
         });
     </script>

@@ -1,7 +1,5 @@
 .project-equal-input-value{
     width: 767px;
-    /* height: 676px; */
-    /* min-height: max-content; */
     padding-bottom: 24px;
     flex-shrink: 0;
     border-radius: 8px;
@@ -18,7 +16,7 @@
 }
 .project-equal-input-value--title{
     color: #000;
-    font-family: "SF Pro Text";
+    font-family: SF Pro Text, sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -26,7 +24,7 @@
 }
 .project-equal-input-value--des{
     color: #343CED;
-    font-family: "SF Pro Text Thin";
+    font-family: SF Pro Text Thin, sans-serif;
     font-size: 13px;
     font-style: normal;
     font-weight: 700;
@@ -36,7 +34,7 @@
 .project-equal-input-value--button{
     text-decoration: none;
     color: #656565;
-    font-family: "SF Pro Text";
+    font-family: SF Pro Text, sans-serif;
     font-size: 13px;
     font-style: normal;
     font-weight: 500;
@@ -50,12 +48,14 @@
     border: 1px solid var(--Line-linePrimary, #DADDE1);
     background: var(--Background-bgSecondary, #F5F7F9);
 }
+.chart1,
 .chart{
     width: 511px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.chart1--infor,
 .chart--infor{
     display: flex;
     width: 304px;
@@ -74,7 +74,7 @@
 .quantity-unfinished{
     color: var(--Content-contentTertiary, #9A9EA5);
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: "SF Pro Text";
+    font-family: SF Pro Text, sans-serif;
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
@@ -104,7 +104,7 @@
     color: var(--Content-contentPrimary, #18202A);
     font-feature-settings: 'clig' off, 'liga' off;
     text-overflow: ellipsis;
-    font-family: "SF Pro Text";
+    font-family: SF Pro Text, sans-serif;
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
@@ -163,7 +163,7 @@
 .project-manage--name,
 .document-project--name{
     color: #000;
-    font-family: "SF Pro Text";
+    font-family: SF Pro Text, sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -172,7 +172,7 @@
 .project-manage--des,
 .document-project--des{
     color: #A2A2A2;
-    font-family: "SF Pro Text Thin";
+    font-family: SF Pro Text Thin, sans-serif;
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
@@ -224,7 +224,7 @@
 }
 .daily-meeting--title{
     color: #000;
-    font-family: "SF Pro Text";
+    font-family: SF Pro Text, sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -232,7 +232,7 @@
 }
 .daily-meeting--des{
     color: #A2A2A2;
-    font-family: "SF Pro Text";
+    font-family: SF Pro Text, sans-serif;
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
@@ -256,7 +256,6 @@
     border-radius: 32px;
     border: 1px solid #FFF;
     background: url(../img/project-detail/avt1.png) lightgray 50% / cover no-repeat;
-    border: 1px solid #fff;
 }
 .avt-user:nth-child(2){
     position: absolute;
@@ -267,7 +266,6 @@
     border-radius: 32px;
     border: 1px solid #FFF;
     background: url(../img/project-detail/avt2.png) lightgray 50% / cover no-repeat;
-    border: 1px solid #fff;
 }
 .avt-user:nth-child(3){
     position: absolute;
@@ -278,14 +276,13 @@
     border-radius: 32px;
     border: 1px solid #FFF;
     background: url(../img/project-detail/avt3.png) lightgray 50% / cover no-repeat;
-    border: 1px solid #fff;
 }
 .remaining-quantity{
     position: absolute;
     top: 6px;
     right: 10px;
     color: #FFF;
-    font-family: "SF Pro Text";
+    font-family: SF Pro Text, sans-serif;
     font-size: 11px;
     font-style: normal;
     font-weight: 500;
@@ -303,7 +300,7 @@
 }
 .daily-meeting--content{
     color: #646464;
-    font-family: "SF Pro Text Thin";
+    font-family: SF Pro Text Thin, sans-serif;
     font-size: 13px;
     font-style: normal;
     font-weight: 700;
@@ -316,7 +313,7 @@
     border-radius: 100px;
     background: var(--Background-bgSecondary, #F5F7F9);
     color: #A2A2A2;
-    font-family: "SF Pro Text Thin";
+    font-family: SF Pro Text Thin, sans-serif;
     font-size: 13px;
     font-style: normal;
     font-weight: 700;
@@ -346,7 +343,7 @@
 }
 .project-intro--title{
     color: #000;
-    font-family: "SF Pro Text Thin";
+    font-family: SF Pro Text Thin, sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -354,7 +351,7 @@
 }
 .project-intro--des{
     color: #A2A2A2;
-    font-family: "SF Pro Text Thin";
+    font-family: SF Pro Text Thin, sans-serif;
     font-size: 13px;
     font-style: normal;
     font-weight: 700;
@@ -373,7 +370,6 @@
     border-radius: 32px;
     border: 1px solid #FFF;
     background: url(../img/project-infor/avt1.png) lightgray 50% / cover no-repeat;
-    border: 1px solid #fff;
 }
 .avt-project-intro-user:nth-child(2){
     position: absolute;
@@ -384,7 +380,6 @@
     border-radius: 32px;
     border: 1px solid #FFF;
     background: url(../img/project-infor/avt2.png) lightgray 50% / cover no-repeat;
-    border: 1px solid #fff;
 }
 .avt-project-intro-user:nth-child(3){
     position: absolute;
@@ -395,14 +390,13 @@
     border-radius: 32px;
     border: 1px solid #FFF;
     background: url(../img/project-infor/avt3.png) lightgray 50% / cover no-repeat;
-    border: 1px solid #fff;
 }
 .project-intro-user-remaining-quantity{
     position: absolute;
     top: 6px;
     right: 10px;
     color: #FFF;
-    font-family: "SF Pro Text";
+    font-family: SF Pro Text, sans-serif;
     font-size: 11px;
     font-style: normal;
     font-weight: 500;
@@ -425,38 +419,41 @@
     border-radius: 100px;
     background: var(--Background-bgSecondary, #F5F7F9);
     color: #A2A2A2;
-    font-family: "SF Pro Text Thin";
+    font-family: SF Pro Text Thin, sans-serif;
     font-size: 13px;
     font-style: normal;
     font-weight: 700;
     line-height: 20px;
 }
 /* ------------------------------------------------------------- */
-.project-equal-input-value--intro{
-    animation: fadeInUp 1.5s ;
-}
-.chart{
-    animation: fadeInUp 2.2s ;
-}
 .project--detail{
-    animation: fadeInUp 2.9s ;
+    -webkit-animation: slide-top1 0.5s ease-out both;
+    animation: slide-top 0.5s ease-out both;
 }
 .pm-document{
-    animation: fadeInUp 3.1s ;
+    -webkit-animation: slide-top1 0.5s ease-out both;
+    animation: slide-top 0.5s ease-out both;
+    animation-delay: 0.2s;
 }
 .daily-meeting{
-    animation: fadeInUp 3.4s ;
+    -webkit-animation: slide-top1 0.5s ease-out both;
+    animation: slide-top 0.5s ease-out both;
+    animation-delay: 0.4s;
 }
 .infor-project{
-    animation: fadeInUp 3.8s ;
+    -webkit-animation: slide-top1 0.5s ease-out both;
+    animation: slide-top 0.5s ease-out both;
+    animation-delay: 0.6s;
 }
-@keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-}
-    to {
-      opacity: 1;
+
+
+@keyframes slide-top1 {
+    0% {
+      -webkit-transform: translateY(50px);
+      transform: translateY(50px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
       transform: translateY(0);
     }
-}
+  }
